@@ -1,0 +1,77 @@
+body {
+    background: whitesmoke;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    position: relative;
+    width: 300px;
+    height: 90px;
+    font-weight: 5px;
+    border-radius: 30px;
+    border: black solid;
+    background: transparent;
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.35s;
+    transition-delay: 0.15s;
+}
+button.active{
+    font-size: 0;
+    width: 90px;
+    background: transparent;
+    border: rgba(0,255,0) solid;
+    box-shadow: none;
+    border-radius: 50%;
+}
+button .fa-solid{
+    padding-right: 15px;
+    padding-bottom: 0px;
+}
+.check span{
+    position: absolute;
+    display: block;
+    background: rgb(0, 255, 0);
+    width: 25px;
+    border-radius: 2px;
+    height: 3px;
+    transition: transform 0.15s;
+    transform-origin: left;
+}
+.check span:first-child {
+    transform: rotate(45deg) scaleX(0);
+    left: 21px;
+    bottom: 41px;
+    transition-delay: 0.6s;
+}
+button.active .check span:first-child {
+    transform:rotate(45deg) scaleX(1);
+}
+.check span:last-child {
+    transform: rotate(-45deg) scaleX(0);
+    left: 37px;
+    bottom: 23px;
+    transition-delay: 0.75s;
+    width: 39px;
+}
+button.active .check span:last-child {
+    transform:rotate(-45deg) scaleX(1);
+}
+button.end .check span:last-child {
+    width: 0px;
+    height: 0px;
+}
+button.end .check span:first-child {
+    width: 0px;
+    height: 0px;
+}
+
+
+
+
+    
